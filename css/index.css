@@ -1,0 +1,273 @@
+/* 头部 */
+.header{
+    width: 100%;
+    height: 55px;
+    background-color: #fff;
+    font-size: 12px;
+    /* 行高等于高-垂直居中  行高具有继承性 */
+    line-height: 55px;
+}
+.header-left{
+    float: left;
+    width: 179px;
+    height: 54px;
+    background-color:  #cf1132;
+    color: #fff;
+}
+.menu{
+    width: 100%;
+    height: 0px;
+    background-color: white;
+    /* 不透明级别 */
+    opacity: .9;
+    /* 让过渡效果持续 1 秒 */
+    transition-duration: 1s;
+}
+
+/* 导航 */
+.nav{
+    z-index: 999;
+    /* 粘性定位 */
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background:url(../img//nav_back_bg_fd2505e.jpg) no-repeat center top;
+}
+.wrap{
+    width: 1180px;
+    margin: 0 auto;
+}
+.nav li{
+    float: left;
+    width: 78px;
+    height: 70px;
+}
+.nav a{
+    color: #fff;
+    font-size: 14px;
+    margin-left: 7px;
+}
+.nav span{
+    font-size: 12px;
+    margin-left: 7px;
+}
+.nav li:hover>a{
+    color: black;
+}
+.active{
+    background: url(../img//nav_bg1_d44f09d.jpg) no-repeat;
+}
+.active>a{
+    color: black;
+}
+.active span{
+    color: #C2A060;
+}
+.nav li:hover{
+    background: url(../img//nav_bg1_d44f09d.jpg) no-repeat;
+}
+.nav li:hover span{
+    color: #C2A060;
+}
+
+/* 下拉列表 */
+.nav-list{
+    z-index:666;
+    display: none;
+    /* 换父元素用绝对定位 */
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 140px;
+    background:url(../img/subnav_bg_5cc9309.jpg) no-repeat center 0;
+}
+.nav li:hover>.nav-list{
+    display: block;
+}
+
+/* banner */
+.banner{
+    position: relative;
+    top: -10px;
+    width: 100%;
+    height: 784px; 
+    overflow: hidden;
+}
+.banner>img{
+    /* 子元素在父元素中水平居中 */
+    position: absolute;
+    left: 50%;
+    margin-left: -960px;
+}
+.logo{
+    position: absolute;
+    left: 150px;
+    top: 83px;
+    width: 77px;
+    height: 247px;
+}
+.logo>a{
+    display: block;
+    width: 77px;
+    height: 247px;
+    background:url(../img/200.webp) no-repeat;
+    background-size: 100%;
+}
+
+/* 主体 */
+.container{
+    width: 1180px;
+    margin: 43px auto 0;
+}
+/* 平安世界 */
+.world{
+    width: 100%;
+    height: 495px;
+    margin-bottom: 70px;
+}
+.world-title{
+    width: 54px;
+    height: 145px;
+    background: url(../img/index_z_203e03e.png);
+    background-position: -835px -532px;
+}
+.world-box{
+    position: relative;
+    width: 100%;
+    height: 320px;
+    background: url(../img/shishen_bg_000bc91.jpg) no-repeat  center 0;
+    margin-top: 23px;
+}
+.world-img{
+    position: relative;
+    width: 940px;
+    height: 320px;
+    margin: 0 auto;
+}
+.world-img>a{
+    position: absolute;
+    top: 0;
+    width: 470px;
+    height: 320px;
+}
+.world-img>a:first-child{ /* first-child强调某个父元素的第一个子元素 */
+    left: 0;
+}
+.world-img>a:last-child{
+    right: 0;
+}
+.world-img>a:first-child>img{
+    position: relative;
+    top: -186px;
+    left: -140px;
+}
+.world-img>a:last-child img{
+    position: absolute;
+    top: -186px;
+    right: -140px;
+}
+.world-tab{
+    position: absolute;
+    top: -165px;
+    width: 292px;
+    height: 40px;
+    margin-left: 120px;
+    border: 2px solid #c2a060;
+}
+.world ul{
+    width: 288px;
+    height: 36px;
+    border: 2px solid #fff;
+}
+.world-tab>ul li{
+    float: left;
+    width: 96px;
+    height: 32px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+}
+.on{
+    background-color: #c2a060;
+    color: #fff;
+}
+.world-tab li:hover{
+    background-color: #c2a060;
+    color: #fff;
+}
+
+/* 游戏攻略 */
+.game{
+    width: 100%;
+    height: 510px;
+    background:url(../img/stategy_bg_4def7a7.jpg) no-repeat;
+    background-position: 0 174px;
+}
+.game-title{
+    float: left;
+    width: 55px;
+    height: 145px;
+    background: url(../img/index_z_203e03e.png);
+    background-position: -898px -532px;
+}
+.game-box{
+    float: right;
+    width: 1080px;
+    height: 209px;
+}
+.game-box>div{
+    position: relative;
+    float: left;
+    width: 340px;
+    height: 209px;
+    margin-left: 20px;
+}
+.game-box span{
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 90px;
+    padding: 0 10px;
+    background: url(../img/stategy_tit_bg_3dfaee2.png);
+    color: black;
+    font-size: 14px;
+    line-height: 18px;
+}
+.game-box>div span:first-of-type{ /* first-of-type强调的是特定类型的第一个，不必是第一个子元素 */
+    top: 0;
+    left: 18px;  
+}
+.game-box>div span:last-of-type{ /* first-of-type强调的是特定类型的第一个，不必是第一个子元素 */
+    top: 22px;
+    left: 68px;  
+}
+
+/* 底部 */
+.bottom{
+    position: relative;
+    width: 100%;
+    height: 927px;
+    background: url(../img/bottom_bg_b30cb11.png) center no-repeat;
+    margin-top: -50px;
+}
+.bottom-logo{
+    position: absolute;
+    top: 346px;
+    left: 320px;
+    width: 71px;
+    height: 224px;
+    background: url(../img/75.webp);
+}
+.bottom-ewm{
+    z-index: 20;
+    position: absolute;
+    right:120px;
+    top: 220px;
+    width: 356px;
+    height: 354px;
+    background: url(../img/bott_ewm_853021b.png);
+}
